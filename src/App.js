@@ -1,4 +1,3 @@
-// App.js
 import React, { useContext } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
@@ -16,9 +15,11 @@ const App = () => {
       <div>
         <Header />
         <div className="container">
-          {store.listIds.map((listId, index) => {
-            const data = store.lists[listId];
-            return <Board key={listId} data={data} index={index} />;
+          {store.listIds.map((id, index) => {
+            const data = store.lists[id];
+            return (
+              <Board key={id} data={data} index={index} moveBoard={moveBoard} />
+            );
           })}
           <Button list />
         </div>
