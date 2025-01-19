@@ -1,0 +1,44 @@
+.add-button {
+    margin-top: 1rem;
+    width: 9rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    height: 6rem;
+    min-width: 10rem;
+    background: #ebecf1;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    .text-area{
+        width: 96%;
+        height: 2rem;
+        resize: none;
+        padding: 0.5rem 1rem;
+        border: none;
+        margin-bottom: 0.3rem;
+        border-radius: 3px;
+        &:focus{
+            outline: none;
+        }
+    }
+        .add{
+            background: #63bd4f;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            color: #fff;
+            &:focus{
+                outline: none;
+            }
+        }
+        .close{
+            width: 3rem;
+            border: none;
+        }
+}

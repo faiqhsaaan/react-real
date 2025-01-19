@@ -1,0 +1,21 @@
+.board-title{
+    height: 2rem;
+    width: 50%;
+    margin: 0.5rem 0;
+    background: none;
+    input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        display: block;
+        padding-left: 3px;
+        font-size: 1.17rem;
+        font-weight: bold;
+        &:focus{
+            outline: none;
+        }
+    }
+    h3 {
+        height: 100%;
+    }
+}
